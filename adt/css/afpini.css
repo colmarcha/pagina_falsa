@@ -1,0 +1,622 @@
+.ms-navsubmenu2{
+    margin-bottom:6px;
+}
+.ms-quicklaunch table.ms-navsubmenu2 td{
+    border:none;
+}
+table.ms-navitem tr{
+    padding-left:10px;
+}
+table.ms-navitem td{
+    padding: 6px 6px 6px 50px;
+    background:url("/www/img/icono/bullet2.png");
+    background-repeat: no-repeat;
+    background-position: 15px 6px;
+    /*border-bottom: 1px #ccc solid !important;*/
+    font-size: 13px !important;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 0px 10px 0px 30px;
+}
+table.ms-navitem td a{
+    color:#003772 !important;
+}
+table.ms-navitem td a:hover{
+    color:#01478b!important;
+    background-color: #e3e4e4;
+}
+/* FIN ALTERNATIVA */
+
+#banner{
+    display:block;
+    width:inherit;
+    height:auto;
+    /*padding-bottom: 10px;*/
+}
+
+#banner2{
+    max-height:300px;
+    position: relative;	
+    margin-bottom: 10px;
+}
+
+
+
+#bienvenido{
+    display:block;
+    width:578px;
+    height:215px;
+    background:url(/www/img/bienvenidoafp.jpg) no-repeat;
+    margin:27px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+}
+
+.imagenl{
+    float:left;
+    margin:10px;
+}
+
+#panelright{
+    height:100%;
+}
+
+table.ms-navheader td{
+    background-color: transparent;
+}
+
+table.ms-navheader td a{
+    font-size: 14px !important;
+    text-decoration: none;
+    /*font-family:Arial, Helvetica, sans-serif;*/
+    font-weight: normal;
+    color:#003772 !important;
+    background:url(/adt/img/icono_menu_afp.png) 20px 20px no-repeat;
+    background-position:left;
+    padding-left:35px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    display: block;
+    line-height: inherit;
+}
+
+table.tabla-rentabilidad {
+    margin: 5px;
+    font-size:7pt;
+}
+
+table.tabla-rentabilidad tr {
+    background: #fff;
+}
+
+table.tabla-rentabilidad th, table.tabla-rentabilidad td {
+    text-align: justify;
+    border-width: 1px;
+    border-style: solid;
+}
+
+table.tabla-rentabilidad td {
+    border-color: #EFEFEF;
+    padding: .7em 1em;
+    background-color:#f8f8f8;
+}
+
+table.tabla-rentabilidad td strong {
+    color:#73201a;
+    text-align:center;
+}
+
+ul.bsm{
+    margin: 0px auto;
+    border:1px solid #B0B0B0;
+    list-style-type: none;
+}
+ul.bsm li{
+    border-left:2px solid #FFFFFF;
+}
+ul.bsm li.first{
+    border-style: none;
+}
+ul.vertical li, div.vertical div{
+    border-top: 2px solid #FFFFFF;
+    border-left-style: none;
+}
+/*==========================================================*/
+/*======Implement Media query and responsive styling========*/
+/*==========================================================*/
+
+.ms-quickLaunch{
+    margin: 10px 0px;
+    float: right;
+    border:none;
+}
+
+#menu {
+    display:block;
+    width:100%;
+    height:34px;
+    background-color: #B92911;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+#menu ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    display: inline-block;
+    text-align: initial;
+    height: inherit;
+}
+#menu ul li{
+    float:left;
+    list-style:none;
+    border-right:1px solid #f4f4f4;
+    height: inherit;
+}
+
+#menu ul li nvl1 {
+    float: left;
+    margin-right: 2px;
+}
+#menu ul li a.nvl1_2 {
+    background-color:#FEA21F;
+    float: left;
+    margin:0px;
+    padding-left:60px;
+    padding-right:60px;
+    color:maroon;
+}
+#menu ul li a {
+    display:block;
+    height:24px;
+    padding:0px 12px;
+    color:#fff;
+    text-decoration:none;
+    font-weight: 600;
+    font-size:10px;
+    padding-top:10px;
+    height: inherit;
+}
+#menu ul li:hover {
+    position: relative;
+}
+#menu ul li a:hover, #menu ul li:hover a.nvl1 {
+    background-color:#ED3130;
+    color:#ffffff;
+}
+#menu ul li a.nvl1 {
+    display: block!important;
+    display: none;
+    position: relative;
+}
+#menu ul li ul {
+    display: none;
+}
+#menu ul li a:hover ul, #menu ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    z-index: 1000;
+}
+
+#menu ul li ul li a {
+    width: 178px;
+    padding: 8px 8px 0px 12px;
+    background-color:#B92911;
+    z-index: 1000;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+#menu ul li ul li a:hover {
+    border-top-color: #000;
+    position: relative;
+}
+
+/*===============================================
+ ===Extra small devices (phones, up to 200px)==== 
+ ================================================*/
+@media screen and (max-width: 480px) {
+    .ms-quickLaunch {
+        display: none;
+    }
+
+    #menu {
+        display:none;
+    }
+}
+
+/*===============================================
+ ===Extra small devices (phones, up to 481px)=== 
+ ================================================*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .ms-quickLaunch {
+        display: none;
+    }
+
+    #menu {
+        display:none;
+    }
+}
+/*===============================================
+ =====Small devices (tablets, 768px and up)====== 
+ ================================================*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #menu {
+        display:block;
+        padding:0px 7px;
+    }
+    #menu ul li a.nvl1_2 {
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+}
+
+/*===============================================
+ ============tablets/desktops and up============= 
+ ================================================*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #menu {
+        display:block;
+    }
+    #menu ul li a.nvl1_2 {
+        padding-left:60px;
+        padding-right:60px;
+    }
+}
+
+/*===============================================
+ ==============large desktops and up============= 
+ ================================================*/
+
+@media screen and (min-width: 1200px) {
+    #menu {
+        display:block;
+    }
+
+    #menu ul li a.nvl1_2 {
+        padding-left:60px;
+        padding-right:60px;
+    }
+}
+
+/*================================================
+ ==========Rediseño del menú responsivo 2========= 
+ ================================================*/
+.cssmenucontainer {
+    background: #9F2E1E;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 35px;
+}
+
+.stickyMenu {
+    position: fixed;
+    top: 85px;
+    width: 100%;
+    max-width:1400px;
+    margin:0 auto;
+    z-index: 1;
+    background-color:#9F2E1E;
+    opacity: 0.95;
+}
+
+.cssmenu2 {
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    z-index: 1;
+}
+.cssmenu2 > li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+.cssmenu2 > li > a,
+.cssmenu2 > li > ul > li > a {
+    display:block;
+    padding-left:7px;
+    padding-right:7px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cssmenu2 > li > ul > li > a {
+    text-align: left;
+    padding-left:7px;
+    padding-right:7px;
+}
+
+.has-submenu:AFTER {
+    content: "+";	
+    right: 15px;
+    position: inherit;
+    /*display: block;
+    float: right;*/
+}
+
+.cssmenu2> li:last-child,
+.cssmenu2> li:last-child > ul > li{
+    background-color: #FEA21F;
+    /*background-color: #E19F37;*/
+}
+
+.cssmenu2> li:last-child:hover > a,
+.cssmenu2> li:last-child > ul > li:hover > a{
+    background-color: #ff9400 !important;
+    /*background-color:  #f7a72a !important;*/
+}
+
+.cssmenu2 > li > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background: #9F2E1E;
+}
+
+.stickyMenu .cssmenu2 > li > ul{
+    background-color:#9F2E1E;
+    opacity: 0.95;
+}
+
+.cssmenu2 > li:hover > a,
+.cssmenu2 > li > ul > li:hover a {
+    color: #ffffff;
+    background-color: #B92911;
+}
+
+.cssmenu2 > li:hover > ul > a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 35px;
+    line-height: 35px;
+}
+
+.cssmenu2 >li:hover > ul > a:hover {
+    background: #19c589;
+    color: #fff;
+}
+
+.cssmenu2 > li > ul {
+    display: none;
+}
+
+.cssmenu2 > li > ul > li {
+    display: block;
+    float: none;
+}
+
+.cssmenu2 > li > ul > li > a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+.cssmenu2 > li > a + .showsubmenu{
+    display: block;
+    z-index: 1;
+}
+
+.show-menu {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    line-height:35px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: none;
+}
+
+.cssmenucontainer > input[type=checkbox] {
+    display: none;
+}
+
+.cssmenucontainer > input[type=checkbox]:checked ~ #menucss2 {
+    display:inline-block;
+}
+
+
+@media screen and (min-width : 663px) and (max-width : 720px) {
+    .cssmenu2 > li > a, .cssmenu2 > li > ul > li > a {
+        font-size: 9px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (min-width : 721px) and (max-width : 850px) {
+
+    .cssmenu2 > li > a,
+    .cssmenu2 > li > ul > li > a {
+        font-size: 10px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+@media screen and (max-width : 662px) {
+
+    .cssmenu2 > li > a {
+        text-align: left;
+        color: #fff;
+        padding-left:15px;
+        text-decoration: none;
+    }
+
+    .cssmenu2 > li > ul > li > a{
+        text-align: left;
+        color: #fff;
+        padding-left:30px;
+        text-decoration: none;
+    }
+
+    .has-submenu:AFTER{
+        content: "+";	
+        display: block;
+        float: right;
+        padding-right: 5px;
+    }
+
+    .cssmenucontainer > input[type=checkbox]:checked ~ #menucss2{
+        border-top: 2px solid #ffffff;
+        display:block;
+        height: 450px;
+        overflow-y: auto;
+    }
+
+    .cssmenu2 ,
+    .cssmenu2 > li > ul {
+        position: relative;
+        display: none;
+        z-index: 1;
+    }
+
+    .cssmenu2 > li {
+        margin-bottom: 0px;
+    }
+
+    .cssmenu2 > li,
+    .cssmenu2 > li > ul > li,
+    .cssmenu2 > li > a {
+        width: 100%;
+        background: #9F2E1E;
+    }
+
+    .stickyMenu .cssmenu2 > li,
+    .stickyMenu .cssmenu2 > li > ul > li,
+    .stickyMenu .cssmenu2 > li > a {
+        width: 100%;
+        background-color: #9F2E1E;
+        opacity: 0.95
+    }
+    
+    .cssmenu2> li:last-child > a,
+    .cssmenu2> li:last-child > ul > li > a {
+    background-color: #FEA21F;
+        opacity: 0.95
+    /* background-color: #f7a72a !important; */
+}
+
+
+    .cssmenu2> li:last-child > a {
+        background-color: #FEA21F;
+    }
+
+    .stickyMenu .cssmenu2> li:last-child > a {
+        background-color: #FEA21F;
+        opacity: 0.95;
+    }
+
+    .show-menu {
+        display:block;
+        position: relative;
+        /*border-bottom: 2px solid #ffffff;*/
+    }
+
+    .show-menu:before {
+        position: absolute;
+        top: 11px;
+        right: 17px;
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #ffffff;
+        content: '';
+    }
+
+    .show-menu:after {
+        position: absolute;
+        top: 17px;
+        right: 17px;
+        display: block;
+        height: 8px;
+        width: 20px;
+        border-top: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+        content: '';
+    }
+}
+/*================================================
+ ========//Rediseño del menú responsivo 2========= 
+ ================================================*/
+.breadcrumb{
+    color: #003772;
+    font-weight: bold;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.breadcrumb span a img{
+    vertical-align: sub !important;
+}
+
+.hr-danger {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #B92911;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.hr-primary {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #003772;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: #9F2E1E;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
